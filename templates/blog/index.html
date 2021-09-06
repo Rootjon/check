@@ -17,6 +17,7 @@
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  />
 
 
     <!-- CSS Plugins -->
@@ -108,7 +109,7 @@
                 </div>
                
                 <div class="search-icon">
-                    <i class="icon_search"></i>
+                    <i class="fas fa-search"></i>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,13 +135,13 @@
                         <div class="card">
                             <div class="post-card">
                                 <div class="post-card-image">
-                                    <a href="post-default.html">
+                                    <a href="">
                                         <img src="{{ post.thumbnail.url }}" alt="">
                                     </a>
         
                                 </div>
                                 <div class="post-card-content">
-                                    <a href="{{category.get_absolute_url}}" class="categorie">{{ category.name }} </a>
+                                    <a href="{{ category.get_absolute_url }}" class="categorie">{{ post.category.name }} </a>
                                     <h5>
                                         <a href="{{ post.get_absolute_url }} ">{{ post.title }} </a>
                                     </h5>
